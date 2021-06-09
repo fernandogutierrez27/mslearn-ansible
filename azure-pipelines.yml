@@ -18,6 +18,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- script: |
+    ssh 
+
 - task: Ansible@0
   inputs:
     ansibleInterface: 'remoteMachine'
@@ -28,4 +31,3 @@ steps:
     inventoriesRemoteMachine: 'file'
     inventoryFileSourceRemoteMachine: 'agentMachine'
     inventoryFileLinkedArtifactOnRemoteMachine: 'azure_rm.yml'
-    args: '--private-key ~/.ssh/ansible_rsa'
