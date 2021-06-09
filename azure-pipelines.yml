@@ -28,6 +28,4 @@ steps:
     inventoriesRemoteMachine: 'file'
     inventoryFileSourceRemoteMachine: 'agentMachine'
     inventoryFileLinkedArtifactOnRemoteMachine: 'azure_rm.yml'
-    sudoEnabled: true
-    sudoUser: 'azureuser'
     args: '--private-key ~/.ssh/ansible_rsa'
