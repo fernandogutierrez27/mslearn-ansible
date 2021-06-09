@@ -22,9 +22,8 @@ steps:
   inputs:
     ansibleInterface: 'remoteMachine'
     connectionOverSsh: 'SSH - Ansible VM'
-    playbookSourceRemoteMachine: 'agentMachine'
-    playbookRootRemoteMachine: '$(System.DefaultWorkingDirectory)'
-    playbookPathLinkedArtifactOnRemoteMachine: 'users.yml'
+    playbookSourceRemoteMachine: 'ansibleMachine'
+    playbookPathAnsibleMachineOnRemoteMachine: 'users.yml'
     inventoriesRemoteMachine: 'file'
     inventoryFileSourceRemoteMachine: 'agentMachine'
     inventoryFileLinkedArtifactOnRemoteMachine: 'azure_rm.yml'
